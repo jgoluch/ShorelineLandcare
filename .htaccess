@@ -1,0 +1,22 @@
+#AddHandler application/x-httpd-php4 .php
+# -FrontPage-
+
+IndexIgnore .htaccess */.??* *~ *# */HEADER* */README* */_vti*
+
+<Limit GET POST>
+order deny,allow
+deny from all
+allow from all
+</Limit>
+<Limit PUT DELETE>
+order deny,allow
+deny from all
+</Limit>
+AuthName www.shorelinelandcare.com
+AuthUserFile /home/shoreli1/public_html/_vti_pvt/service.pwd
+AuthGroupFile /home/shoreli1/public_html/_vti_pvt/service.grp
+
+Options +FollowSymlinks 
+RewriteEngine On
+RewriteCond %{HTTP_HOST} \olddomain.com$
+RewriteRule ^(.*)$ http://newdomain.com/$1 [R=301,L]
