@@ -91,6 +91,48 @@ td.gallery
 
 #header
 {
+
+	
+	-webkit-transition: opacity 2.2s ease-in-out;
+	-moz-transition: opacity 2.2s ease-in-out;
+	-ms-transition: background-image 2.2s ease-in-out;
+	-o-transition: background-image 2.2s ease-in-out;
+	transition: background-image 2.2s ease-in-out;
+	
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+	text-align: center;
+//	vertical-align: top;
+}
+
+
+#headerBG
+{
+	z-index: 1;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+	background-attachment: fixed;
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+	text-align: center;
+//	vertical-align: top;
+}
+
+#headerContent
+{
+	z-index: 10;
+	position: relative;
 	width: 100%;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -159,7 +201,7 @@ td.gallery
 {
 	text-align: center;
 	font-size: 16px;
-	color: #336633;
+	color: #666666;
 	font-family: sans-serif, Verdana;
 	font-weight: normal;
 }
@@ -178,7 +220,7 @@ td.gallery
 	a.nav {
 		text-decoration: none;
 		font-size: 16px;
-		color: #336633;
+		color: #666666;
 		font-family: sans-serif, Verdana;
 		font-weight: bold;
 		display: block;
@@ -187,18 +229,18 @@ td.gallery
 		  }
 	a.nav:link {
 		font-size: 16px;
-		color: #336633;
+		color: #666666;
 		font-family: sans-serif, Verdana;
 		font-weight: bold;
 		 }
 	a.nav:visited {
 		font-size: 16px;
-		color: #336633;
+		color: #666666;
 		font-family: sans-serif, Verdana;
 		font-weight: bold;
 	  	}
 	a.nav:hover {
-		background: #336633;
+		background: #666666;
 		color: white;
 		font-size: 16px;
 		font-family: sans-serif, Verdana;
@@ -206,7 +248,7 @@ td.gallery
 		}
 	a.nav:active {
 		font-size: 16px;
-		color: #336633;
+		color: #666666;
 		font-family: sans-serif, Verdana;
 		font-weight: bold;
 		}
@@ -308,26 +350,26 @@ padding:1em;
 
 #footerDiv
 {
-background-color: #336633;
+background-color: #aaaaaa;
 }
 
 #footer1
 {
 	font-size: 11px; 
-	color: #ffffff;
-	margin-top: 50px;
+	color: #333333;
+	margin-top: 150px;
 }
 
 #footer2
 {
 	font-size: 10px; 
-	color: #ffffff;
+	color: #333333;
 }
 
 #footer3
 {
 	font-size: 9px; 
-	color: #ffffff;
+	color: #333333;
 }
 
 
@@ -371,7 +413,7 @@ li {
 h1 {
 	font-family:Verdana;
 	font-size:13px;
-	color:#336633;
+	color:#666666;
 	font-weight:bold;
 	font-style:normal;
 	margin:5px;
@@ -413,7 +455,7 @@ h1 {
 h3 {
 	font-family:Verdana;
 	font-size:14px;
-	color: #003300;
+	color: #666666;
 	font-weight:bold;
 	font-style:normal;
 	text-transform:uppercase;
@@ -494,7 +536,7 @@ h3 {
 //	P { margin-bottom: 0.08in; direction: ltr; color: #000000; widows: 0; orphans: 0 }
 	P.western { font-family: "Times New Roman", serif; font-size: 12pt; so-language: en-US }
 	
-	.p_western {color: #336633; margin-bottom: 0in; margin-left: 20px; margin-right: 20px; text-decoration: none; font-family:Verdana; font-size: 14px; font-weight: bold;}
+	.p_western {color: #666666; margin-bottom: 0in; margin-left: 20px; margin-right: 20px; text-decoration: none; font-family:Verdana; font-size: 14px; font-weight: bold;}
 
 
 	
@@ -502,6 +544,6 @@ h3 {
 	P.cjk { font-family: "Verdana Unicode MS", sans-serif; font-size: 12pt; so-language: zxx }
 	P.ctl { font-family: "Tahoma"; font-size: 12pt; so-language: zxx }
 //	H1 { margin-bottom: 0.08in; direction: ltr; color: #000000; widows: 0; orphans: 0 }
-	.h1_western { text-align: center; color: #336633; font-family: "Verdana", sans-serif; font-size: 16pt; margin: auto; so-language: en-US }
+	.h1_western { text-align: center; color: #666666; font-family: "Verdana", sans-serif; font-size: 16pt; margin: auto; so-language: en-US }
 	H1.cjk { font-family: "MS Mincho"; font-size: 16pt; so-language: zxx }
 	H1.ctl { font-family: "Tahoma"; font-size: 16pt; so-language: zxx }
