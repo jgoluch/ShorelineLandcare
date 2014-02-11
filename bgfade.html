@@ -1,0 +1,93 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+<title>Untitled</title>
+
+
+<script src="JS/jquery-1.10.2.min.js"></script>
+
+<script type='text/javascript'>//<![CDATA[ 
+/***********************************
+$(window).load(function(){
+$('#hdrBG').css('background-image', 'url(Tranquil.jpg)').hide();
+    $('#hdrBG').fadeIn(5000);
+
+});//]]>  
+************************************/
+
+
+
+
+var iCurrentImg=0;
+var hdrImages = new Array();
+
+hdrImages[0]="graphics/hdrBG_TEMP1.jpg";
+hdrImages[1]="graphics/hdrBG_TEMP4.jpg";
+hdrImages[2]="graphics/hdrBG_TEMP5.jpg";
+
+function startImgTimer() {
+	//alert("Made it to the timer handler");
+	setInterval("changeHdrImg()", 8000);
+}
+
+function changeHdrImg() {
+
+
+	if(++iCurrentImg >= hdrImages.length) {
+		iCurrentImg = 0;
+		}
+		
+	// Change table cell BG image
+	$('#hdrBG').fadeOut(1250,function(){
+			$('#hdrBG').css({
+			'background':"url('" + hdrImages[iCurrentImg] + "')",
+//				'background-position':'center',
+			'background-repeat':'no-repeat',
+			'background-size':'99% 100%',
+			'position': 'absolute'
+			}).fadeIn(1250);
+		});
+		
+}
+
+</script>
+
+
+<style type="text/css">
+#hdrBG
+{
+    position: absolute;
+	background:url('graphics/hdrBG_TEMP1.jpg');
+    background-repeat: no-repeat;
+    background-size:99% 100%;
+    //background-attachment:fixed;
+    font-family:font-family: Helvetica,Arial, sans-serif;
+    text-align:center;
+    width: 100%;
+	height: 275px;
+    z-index:1;
+}
+#content
+{
+ position: relative;
+z-index: 10; 
+padding-top: 50px;    
+}
+
+h1
+{
+color: cyan;
+}
+
+</style>
+
+
+</head>
+<body onload="startImgTimer()">
+<div id="hdrBG"></div>
+    <div id="content">
+        <h1>your content here</h1>
+</div>
+</body>
+</html>
