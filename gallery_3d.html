@@ -41,9 +41,31 @@ Plainfield, Geneva, Downers Grove, Woodridge, Wheaton, Lisle, brick fire pits, d
 
 <script type="text/javascript" src="sl_GoogleAnalytics.js"></script>
 
+<script type="text/javascript">
+var iCurrentImg=0;
+var hdrImages = new Array();
+
+hdrImages[1]="graphics/hdrBG_TEMP1.jpg";
+hdrImages[0]="graphics/hdrBG_TEMP4.jpg";
+hdrImages[2]="graphics/hdrBG_TEMP5.jpg";
+hdrImages[3]="graphics/hdrBG_TEMP6.jpg";
+
+function loadHdrBG() {
+	//alert("Made it to the timer handler");
+	$('#hdrBG').css({
+			'background':"url('" + hdrImages[0] + "')",
+//				'background-position':'center',
+			'background-repeat':'no-repeat',
+			'background-size':'99% 100%',
+			'position': 'absolute'
+			}).fadeIn(1000);
+}
+</script>
+
 </head>
 
-<body>
+<body onload="loadHdrBG()">
+
 <script type="text/javascript">
 $(document).ready(function(){
   $('.bxslider').bxSlider();
@@ -54,8 +76,12 @@ $(document).ready(function(){
 
 <table  id="tableMain">
 <tr height="275" >
-	<td id="header" style="background-image:url('graphics/hdrBG_TEMP4.jpg');" >
-		<div id="header">
+	<td  id="header" align="center">
+
+		<!-- The header background dov -->
+		<div id="hdrBG"></div>
+
+		<div id="hdrContent" >
 		<table id="hdrTab" >
 			<tr>
 
@@ -196,7 +222,7 @@ $(document).ready(function(){
 				<br>
 				</div>
 				</li>
-			
+
 			</ul> <!-- End of bxslider UL -->
 			<script src="index_files/vlb_engine/vlbdata1.js" type="text/javascript"></script>
 			<!-- End VisualLightBox.com BODY section -->

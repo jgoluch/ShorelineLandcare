@@ -22,9 +22,7 @@ Plainfield, Geneva, Downers Grove, Woodridge, Wheaton, Lisle, brick fire pits, d
 
 <link rel="stylesheet" href="CSS/sl_style.css">
 
-<!--
 <script type="text/javascript" src="sl_GoogleAnalytics.js"></script>
--->
 
 <!--
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -80,65 +78,18 @@ display:none;
 }
 </style>
 
-
-<script type="text/javascript">
-var iCurrentImg=0;
-var hdrImages = new Array();
-
-hdrImages[0]="graphics/hdrBG_TEMP1.jpg";
-hdrImages[1]="graphics/hdrBG_TEMP4.jpg";
-hdrImages[2]="graphics/hdrBG_TEMP5.jpg";
-hdrImages[3]="graphics/hdrBG_TEMP6.jpg";
-
-function startImgTimer() {
-	//alert("Made it to the timer handler");
-	$('#hdrBG').css({
-			'background':"url('" + hdrImages[0] + "')",
-//				'background-position':'center',
-			'background-repeat':'no-repeat',
-			'background-size':'99% 100%',
-			'position': 'absolute'
-			}).fadeIn(3000);
-	setInterval("changeHdrImg()", 8000);
-}
-
-function changeHdrImg() {
-	if(++iCurrentImg >= hdrImages.length) {
-		iCurrentImg = 0;
-		}
-
-	// Change table cell BG image
-	$('#hdrBG').fadeOut(1250,function(){
-			$('#hdrBG').css({
-			'background':"url('" + hdrImages[iCurrentImg] + "')",
-//				'background-position':'center',
-			'background-repeat':'no-repeat',
-			'background-size':'99% 100%',
-			'position': 'absolute'
-			}).fadeIn(1250);
-		});
-
-}
-
-</script>
-
-
 </head>
 
 
 
-<body onload="startImgTimer()">
+<body>
 <div align="center">
 
 <table  id="tableMain">
-<tr height="275">
-	<td  id="header" align="center">
-
-		<!-- The header background dov -->
-		<div id="hdrBG"></div>
-
-		<div id="hdrContent" >
-		<table id="hdrTab">
+<tr height="275" >
+	<td id="header" style="background-image:url('graphics/hdrBG_TEMP1.jpg');" >
+		<div id="header">
+		<table id="hdrTab" >
 			<tr>
 
 
@@ -165,8 +116,7 @@ function changeHdrImg() {
 				</td>
 			</tr>
 		</table>
-		</div>	<!-- headerContent -->
-
+		</div>
 	</td>
 </tr>
 <tr height="360">

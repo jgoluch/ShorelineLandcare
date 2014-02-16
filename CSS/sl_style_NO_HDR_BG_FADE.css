@@ -89,81 +89,8 @@ td.gallery
      /*background: #000000;*/
  	}
 
-	
-	
-#hdrBG
-{
-    position: absolute;
-	background:url("graphics/hdrBG_TEMP1.jpg");
-    background-repeat: no-repeat;
-    background-size:99% 100%;
-    //background-attachment:fixed;
-    font-family:font-family: Helvetica,Arial, sans-serif;
-    text-align:center;
-    width: 100%;
-	height: 275px;
-    z-index:1;
-	display: table-cell;
-    vertical-align: middle;
-	margin: auto;
-}
-#hdrContent
-{
-	position: relative;
-	width: 100%;
-	z-index: 10; 
-	padding-top: 50px; 
-	display: table-cell;
-	text-align: center;
-    vertical-align: middle;
-	margin: auto;
-}
-	
 #header
 {
-	//width: 100%;
-	////background-repeat: no-repeat;
-	//background-position: center;
-	//background-size: 100% 100%;
-	//margin: auto;
-	//vertical-align: top;
-	
-	
-	width: 100%;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 100% 100%;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: auto;
-	margin-bottom: auto;
-	align: center;
-	vertical-align: top;
-	
-}
-
-
-#headerBG
-{
-	z-index: 1;
-	width: 100%;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 100% 100%;
-	background-attachment: fixed;
-	position: absolute;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: auto;
-	margin-bottom: auto;
-	text-align: center;
-	vertical-align: top;
-}
-
-#headerContent
-{
-	z-index: 10;
-	position: relative;
 	width: 100%;
 	background-repeat: no-repeat;
 	background-position: center;

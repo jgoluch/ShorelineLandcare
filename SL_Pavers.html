@@ -18,19 +18,40 @@ Plainfield, Geneva, Downers Grove, Woodridge, Wheaton, Lisle, brick fire pits, d
 <meta http-equiv="Content-Type" content="text/html;" />
 
 <link rel="stylesheet" href="CSS/sl_style.css" type="text/css">
+<script src="JS/jquery-1.10.2.min.js"></script>
 
 <script type="text/javascript" src="sl_GoogleAnalytics.js"></script>
 
+<script type="text/javascript">
+var hdrImages = new Array();
+
+hdrImages[0]="graphics/hdrBG_TEMP12.jpg";
+
+function loadHdrBG() {
+	//alert("Made it to the timer handler");
+	$('#hdrBG').css({
+			'background':"url('" + hdrImages[0] + "')",
+			'background-repeat':'no-repeat',
+			'background-size':'99% 100%',
+			'position': 'absolute'
+			}).fadeIn(1000);
+}
+</script>
+
 </head>
 
-<body>
+<body onload="loadHdrBG()">
 
 <div align="center">
 
 <table  id="tableMain">
 <tr height="275" >
-	<td id="header" style="background-image:url('graphics/hdrBG_TEMP12.jpg');" >
-		<div id="header">
+	<td  id="header" align="center">
+
+		<!-- The header background dov -->
+		<div id="hdrBG"></div>
+
+		<div id="hdrContent" >
 		<table id="hdrTab" >
 			<tr>
 
@@ -249,7 +270,7 @@ Plainfield, Geneva, Downers Grove, Woodridge, Wheaton, Lisle, brick fire pits, d
 		<h3>Visualize your project before it is done</h3>
 		<a href="gallery_3d.html"><img src="graphics/banner3DGallery.jpg" border="0" alt="Shoreline Landcare | Aurora, IL | brick patios, lawn maintenance, Landscape design"></a>
 		-->
-		
+
 		<div id="footerDiv">
 		<p id="footer1"><br>Shoreline Landcare is fully insured - Call 630-551-5224 or <a href="contact.html"><span style="color: cyan;">click here to request an estimate</span></a></p>
 		<p id="footer2">
@@ -263,7 +284,7 @@ Plainfield, Geneva, Downers Grove, Woodridge, Wheaton, Lisle, brick fire pits, d
 
 		<p id="footer3">Website by <a href="http://www.jgwebdesigns.net" target="_blank"><img src="graphics/jgwdLogo_thm.gif" align="middle" border="0"></a></p>
 		</div>
-		
+
 	</td>
 </tr>
 </table>
